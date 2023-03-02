@@ -1,0 +1,90 @@
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <!-- banner SVG design -->
+    <div class="banner">
+        <svg width="200" height="200">
+            <line x1="10" y1="10" x2="100" y2="100" stroke="gray" stroke-width="3"/>
+            <polygon points="25,15 20,20 100,100" fill="green"/>
+            <polygon points="1,50 10,33 100,100" fill="yellow"/>
+            <path d="M100,100 L100,20 A79,79 0 0,1 170,60 z" fill="red" />
+            <path d="M100,100 L170,60 A79,79 0 0,1 125,175 z" fill="orange" />
+            <path d="M100,100 L125,175 A78,78 0 0,1 25,125 z" fill="purple" />
+            <circle cx="100" cy="100" r="48" fill="white"/>
+            <circle cx="100" cy="100" r="22" fill="#2E3191"/>
+        </svg>
+          
+        <div id="banner-text">
+            <p><span style="color: #FAAF3B">info</span>rmation<br>
+                <span style="color: #FAAF3B">vis</span>ualization<br>
+                <span style="font-size: 24px; color: #FAAF3B">CS 7450</span>
+            </p>
+        </div>
+    </div>
+    
+    <!-- main content -->
+
+    <nav>
+        <ul>
+            <div class="navbar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./courseinfo.html">Course Info</a></li>
+            <li><a href="./schedule.html">Schedule</a></li>
+            <li><a href="./instructor.html">Instructor</a></li>
+            <li><a href="./ta.html">TA</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="info-content">
+        <h2>Instructor</h2>
+        <div class="blank"></div>
+        <div class="info">
+            <div class="pic-layout"><img src="images/stasko.jpeg" alt="John"></div>
+            <div>    
+                <p>
+                    <a href="https://faculty.cc.gatech.edu/~john.stasko/" id="page-header"><b>John Stasko</b></a>
+                    <table>
+                        <tr>
+                            <td><b>Office</b></td>
+                            <td id="td-dir"><a href="https://faculty.cc.gatech.edu/~stasko/office-dirs.html">Technology Square Research Building -- TSRB 355</a>
+                        </tr>
+                        <tr>
+                            <td><b>Lecture</b></td>
+                            <td>Tuesday 2:00-3:15<br>Thurday 2:00-3:15 pm</td>
+                        </tr>
+                        <tr>
+                            <td><b>Drop-In Hours</b></td>
+                            <td>Regular weekly times<br>
+                                Mon 3-4 pm, <a href=" https://gatech.zoom.us/j/96906680063?pwd=QlluakU5TkZVK0ZmV29iU3RFcE1KUT09">online</a><br>
+                                Wed 10-11 am, in-person<br>
+                                Other times by appointment</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Contact</b></td>
+                            <td><button class="btn-original"><a href="mailto:stasko@cc.gatech.edu" class="btn"><i class="fa fa-envelope-o" style="font-size:16px"></i></a></button><br>
+                                <div id="email-details">The best way to contact me is by email.<br>
+                                Include "[CS 7450]" in the subject of your email.<br>
+                                Please don't send me messages in Canvas.
+                                </div>
+                            </td>
+                        </tr>
+                      </table>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

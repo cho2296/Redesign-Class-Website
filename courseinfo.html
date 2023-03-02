@@ -1,0 +1,157 @@
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+
+<body>
+    <!-- banner SVG design -->
+    <div class="banner">
+        <svg width="200" height="200">
+            <line x1="10" y1="10" x2="100" y2="100" stroke="gray" stroke-width="3"/>
+            <polygon points="25,15 20,20 100,100" fill="green"/>
+            <polygon points="1,50 10,33 100,100" fill="yellow"/>
+            <path d="M100,100 L100,20 A79,79 0 0,1 170,60 z" fill="red" />
+            <path d="M100,100 L170,60 A79,79 0 0,1 125,175 z" fill="orange" />
+            <path d="M100,100 L125,175 A78,78 0 0,1 25,125 z" fill="purple" />
+            <circle cx="100" cy="100" r="48" fill="white"/>
+            <circle cx="100" cy="100" r="22" fill="#2E3191"/>
+        </svg>
+          
+        <div id="banner-text">
+            <p><span style="color: #FAAF3B">info</span>rmation<br>
+                <span style="color: #FAAF3B">vis</span>ualization<br>
+                <span style="font-size: 24px; color: #FAAF3B">CS 7450</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- main content -->
+    
+    <nav>
+        <ul>
+            <div class="navbar">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./courseinfo.html">Course Info</a></li>
+            <li><a href="./schedule.html">Schedule</a></li>
+            <li><a href="./instructor.html">Instructor</a></li>
+            <li><a href="./ta.html">TA</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h2>Course Information</h2>    
+        &nbsp
+        <p>
+            <b>Overview</b><br>
+            <p>The course will follow a general lecture/seminar style. For one day per week (Tuesdays), we will focus on visualization research. We will read research papers on some topic/theme, students will make presentations about the papers, and we will discuss. One goal is to try to develop ideas for new research projects. On the other day per week (Thursdays), we will focus on visualization system/application development. Students will learn how to develop interactive visualization tools using languages and libraries like Vega-Lite, D3, and JavaScript.</p>
+        </p>
+        &nbsp
+        <p>
+            <b>Grades and Assignments</b><br>
+            <div class="grid-container">
+                <div class="grid-item">
+                    Grades will be determined by a combination of assignments and measures as shown: 
+                    <div id="textbook">
+                        <b>Textbook</b><br>
+                        <div>We will not use a specific textbook but will have weekly readings of papers from the visualization research community. Scott Murray's book <a href="https://alignedleft.com/work/d3-book-2e"><i>Interactive Data Visualization for the Web, 2nd edition</i></a> may be helpful for the visualization system development. (More to come on that later.)</div>
+                    </div>
+                </div>
+                <div class="grid-item"></div>
+                <div class="grid-item-right">
+                <table>
+                    <tr>
+                        <th>Component</th>
+                        <th>Weight</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="hovertext-paper-presentation" 
+                            data-hover="Once during the term, each student will make a 10-minute summary presentation about one of our selected research papers. Presentations should follow a style and outline as discussed in class.">
+                            Paper presentation</span>
+                        </td>
+                        <td id="percentage">15%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="hovertext-paper-summarization" 
+                            data-hover="Once during the term, each student will write a 2-3 page (single spaced, single column) review article summarizing a paper to be presented that week. These summaries are due Monday night at 8pm. Students should end each summary with a research discussion question for that week's topic.">
+                            Paper summarization</span>
+                        </td>
+                        <td id="percentage">15%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="hovertext-research-proposal" 
+                            data-hover="At the end of the term, each student will submit a ~3 page proposal on a research topic that they would (potentially) like to conduct in the future. The proposal can be on any of the topics that we discussed during the term. Think of this as a proposal for an independent study, directed research project that you might do with a faculty member.">
+                            Research proposal</span>
+                        </td>
+                        <td id="percentage">20%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="hovertext-class-engagement" 
+                            data-hover="This is an in-person section of the course, and all students are required and expected to attend class. On research days (Tuesdays), when other students are presenting papers, everyone should give the presenters their attention and be ready for a discussion afterwards. On programming days (Thursdays), the instructors will present material and then students will engage with interactive labs, so definitely bring your laptop that day.">
+                            Class engagement</span>
+                            <p id="class-engagement"><i>Important Note</i>: If you are sick, please do not come to class. Covid is still quite rampant in society, and we do not need to be spreading the disease through our class. If you have the slightest inclination that you may be positive, please do not come to class. Here is the <a href="https://health.gatech.edu/coronavirus">campus info about Covid from Stamps Health Services.</a></p>
+                        </td>
+                        <td id="percentage">10%</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="hovertext-programming-hws" 
+                            data-hover="Each HW will be graded out of 10 points. For each 24 hours late, 10% of the total grade (i.e., one point) will be deducted from an assignment's score. A HW can be turned in up to a week late unless otherwise notified. All the HW assignment details can be found in Canvas.">
+                            Programming HWs</span>
+                            <table id="hw">
+                                <tr>
+                                    <td>HW 1</td>
+                                    <td>Vega-Lite</td>
+                                </tr>
+                                <tr>
+                                    <td>HW 2</td>
+                                    <td>Web Technologies</td>
+                                </tr>
+                                <tr>
+                                    <td>HW 3</td>
+                                    <td>TBA</td>
+                                </tr>
+                                <tr>
+                                    <td>HW 4</td>
+                                    <td>TBA</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td id="percentage">40%</td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </p>
+        &nbsp
+        <p>
+            <b>Academic Integrity</b><br>
+            <p>Georgia Tech aims to cultivate a community based on trust, academic integrity, and honor. Students are expected to act according to the <a href="https://catalog.gatech.edu/policies/honor-code/" id="hyperlink">highest ethical standards</a>. Unless otherwise noted, all work should be strictly your own. Any student suspected of cheating or plagiarizing on an assignment will be reported to the Office of Student Integrity, who will investigate the incident and identify the appropriate penalty for violations. If you have any questions about these policies, just ask your instructor.</p>
+            <p>The HW programming exercises are opportunities for each student to learn web-based visualization application development. Thus, what you submit for these assignments should be your own work, and they should be code that you have written. We do expect that you understand and can explain the homework solution that you submit.</p>
+            <p>Students should be aware of the approved sources of assistance, help, and collaboration in our course. You can definitely use resources provided for everyone, including the instructor and teaching assistants. In particular, you should take advantage of our TA helpdesk/office hours to get personalized assistance on HW assignments. It also is permissible, and actually recommended, that you post questions about course concepts and HW assignments to Ed Discussion. Please refrain from posting code in public (readable by all) messages there, however. If you post code, make it a private message to the instructor and TAs.</p>
+            <p>We also seek to create a culture where you can interact with and learn from other students in class as well. Interaction between students at a <b>conceptual, high-level</b> is permitted. You can discuss course concepts and HW assignments broadly, that is, at a conceptual level to increase your understanding. If you find yourself dropping to a level where specific code is being discussed for a HW, that is going too far. Those discussions should be reserved for the instructor and TAs.</p>
+            <p>In addition to what is allowable, it is important for you to understand what is not permitted in our class. Sharing code, either an entire program or even just a portion of a program, between students is not allowed. Taking/Receiving assignments from other classmates, being given a homework solution, or downloading completed assignments from websites are considered plagiarism and are not allowed. These are activities that are simply meant to earn a score, not understand our course material. Similarly, you should not give (email, IM, etc) or even show a copy of your code, or a portion of your code to another student. In this course, giving code is considered just as bad as receiving code, so you must not succumb to other student's requests to see your program(s). If you are caught doing any of the prohibited activities above, you will be dealt with according to the GT Academic Honor Code and the incident will be submitted to the Office of Student Integrity.</p>
+        </p>
+        &nbsp
+        <p>
+            <b>Excused Absences</b><br>
+            <p>From time to time, circumstances such as an excused school absence (athletics, competition, conference, etc.), an illness/sickness, a family emergency, or other such circumstances may prevent a student from completing an assignment or assigned work. In the event of one of these circumstances, the student is responsible for contacting the Office of the Vice President and Dean of Students as soon as possible to report the issue, conflict, or emergency, providing dated documentation and requesting assistance in <a href="http://www.catalog.gatech.edu/rules/4/" id="hyperlink">notifying their instructors</a>. You should <b>NOT</b> go to your instructor first with such documentation. Instead, documentation such as medical forms will be handled confidentially within the Office of the Vice President and Dean of Students and their office will inform a decision as to whether communication with instructional faculty is appropriate.</p>
+            <p>If this can all be done beforehand then you should get written confirmation of the approved absence from the Registrar's office and notify the instructor prior to the day(s) of the absence. Clearly, some circumstances such as medical emergencies do not allow for that, so they can be handled after the fact.</p>
+        </p>
+        &nbsp
+        <p>
+            <b>Accommodations for Students with Disabilities</b><br>
+            <p>If you are a student with learning needs that require special accommodation, contact the <a href="http://disabilityservices.gatech.edu/" id="hyperlink">Office of Disability Services</a> at (404) 894-2563 to make an appointment to discuss your special needs and to obtain an accommodations letter. Please also e-mail me as soon as possible in order to set up a time to discuss your learning needs.</p>
+        </p>
+    </div>
+</html>
+
+</body>
+</html>
